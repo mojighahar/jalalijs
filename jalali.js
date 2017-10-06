@@ -208,6 +208,14 @@ Jalali.prototype.toString = function (){
 	return `${this.year}/${this.month}/${this.day} ${this.hour}:${this.minute}:${this.second}`;
 };
 
+Jalali.prototype.toStringDate = function (){
+	return `${this.year}/${this.month}/${this.day}`;
+};
+
+Jalali.prototype.toStringTime = function (){
+	return `${this.hour}:${this.minute}:${this.second}`;
+};
+
 Jalali.prototype.getMonthName = function(){
 	switch(true){
 		case this.month == 1:
